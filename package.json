@@ -1,0 +1,16 @@
+{
+  "name": "wasm-test",
+  "version": "0.0.1",
+  "description": "Web Assembly Test",
+  "main": "index.js",
+  "repository": "git@github.com:samwaters/WebAssembly.git",
+  "author": "Sam Waters <sam@samwaters.com>",
+  "license": "GPL-3.0",
+  "private": false,
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "scripts": {
+    "start": "node server/server"
+  }
+}
