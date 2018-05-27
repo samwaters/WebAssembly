@@ -3,7 +3,8 @@ import {hot} from 'react-hot-loader'
 import {connect} from 'react-redux'
 
 import {IAction, IConnectedProps} from 'actions/action.interface'
-import {Button} from 'components/ui/Button'
+import {Prime} from 'components/prime'
+import {Button} from 'components/ui/button'
 import {Col, Row} from 'components/ui/grid'
 import {Header} from 'components/ui/header'
 import {Layout} from 'components/ui/layout'
@@ -29,8 +30,7 @@ class App extends React.Component<IAppComponent> {
         </Header>
         <Row direction='row'>
           <Col md={6} xs={12}>
-            <p>Hello</p>
-            <p>Test</p>
+            <Prime />
           </Col>
           <Col md={6} xs={12}>
             <p>Count: {this.props.count}</p>
