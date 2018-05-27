@@ -1,8 +1,9 @@
 import * as React from 'react'
+import {hot} from 'react-hot-loader'
 import {connect} from 'react-redux'
 
 import {IAction, IConnectedProps} from 'actions/action.interface'
-import {Button} from 'components/Button'
+import {Button} from 'components/ui/Button'
 import {Col, Row} from 'components/ui/grid'
 import {Header} from 'components/ui/header'
 import {Layout} from 'components/ui/layout'
@@ -41,6 +42,8 @@ class App extends React.Component<IAppComponent> {
   }
 }
 
+const AppHot = hot(module)(App)
+
 const AppComponent = connect(
   (state: IAppState) => ({
     count: state.count.count,
@@ -48,6 +51,6 @@ const AppComponent = connect(
   (dispatch: (action: IAction) => void) => ({
     btnClick: () => { dispatch({type: 'COUNT', payload: 123123}) },
   }),
-)(App)
+)(AppHot)
 
 export {AppComponent}
