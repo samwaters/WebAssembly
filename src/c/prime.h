@@ -1,0 +1,1 @@
+int isPrime(double num);
