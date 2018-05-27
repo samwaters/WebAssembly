@@ -7,9 +7,11 @@
   "rules": {
     "indent": [true, "spaces", 2],
     "interface-name": false,
+    "object-literal-shorthand": false,
     "quotemark": [true, "single"],
     "no-empty-interface": false,
-    "semicolon": false
+    "semicolon": false,
+    "whitespace": false
   },
   "rulesDirectory": []
 }
