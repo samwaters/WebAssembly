@@ -8,9 +8,41 @@
   "license": "GPL-3.0",
   "private": false,
   "dependencies": {
-    "express": "^4.16.3"
+    "babel-polyfill": "^6.26.0",
+    "express": "^4.16.3",
+    "history": "^4.7.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1",
+    "styled-components": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.48",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.48",
+    "@babel/preset-env": "^7.0.0-beta.48",
+    "@babel/preset-react": "^7.0.0-beta.48",
+    "@babel/preset-typescript": "^7.0.0-beta.48",
+    "@types/react": "^16.3.14",
+    "@types/react-dom": "^16.0.5",
+    "@types/react-redux": "^6.0.0",
+    "@types/react-router": "^4.0.25",
+    "@types/react-router-dom": "^4.2.6",
+    "@types/react-router-redux": "^5.0.14",
+    "babel-loader": "^8.0.0-beta.3",
+    "tslint": "^5.10.0",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^2.8.3",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
   },
   "scripts": {
+    "build.dev": "webpack --config webpack.config.js -d",
     "start": "node server/server"
   }
 }
