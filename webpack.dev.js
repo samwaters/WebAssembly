@@ -18,7 +18,7 @@ const config = {
   entry: [
     APP_DIR + '/index.tsx'
   ],
-  mode: process.env.NODE_ENV,
+  mode: 'development',
   module: {
     rules: [
       {
@@ -44,7 +44,7 @@ const config = {
     ]
   },
   output: {
-    filename: process.env.NODE_ENV === 'development' ? 'bundle.dev.js' : '[name].prod.js',
+    filename:'bundle.dev.js',
     path: BUILD_DIR
   },
   plugins: [
