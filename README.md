@@ -12,7 +12,7 @@ To test how well JS and Web Assembly can work together
  - Project will be available on http://localhost:9000
 
 ## Compiling the C code
-Compiled using Emscripten (on a Linux build host)
+Compiled using Emscripten (on a Linux build host)  
 Compile commmand: `emcc -O3 -s WASM=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='["cwrap"]' prime.c -o prime.js`
 
 ## Notes
