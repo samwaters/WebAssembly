@@ -1,6 +1,9 @@
 # WebAssembly
 C + JS = Greatness
 
+## Demo
+http://samwaters.com/projects/webassembly
+
 ## Purpose
 To test how well JS and Web Assembly can work together
 
