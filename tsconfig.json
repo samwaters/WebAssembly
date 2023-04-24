@@ -6,9 +6,9 @@
     "module": "commonjs",
     "noImplicitAny": true,
     "paths": {
-      "actions/*": ["src/app/actions/*"],
       "components/*": ["src/app/components/*"],
-      "reducers/*": ["src/app/reducers/*"],
+      "sagas/*": ["src/app/sagas/*"],
+      "store/*": ["src/app/store/*"],
       "selectors/*": ["src/app/selectors/*"],
       "theme/*": ["src/app/theme/*"]
     },
