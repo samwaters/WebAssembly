@@ -3,7 +3,7 @@
 double squareRoot(double number) {
    double x = number;
    double y = 1.0;
-   double e = 0.000001; /* error tolerance */
+   double e = 1.0; /* error tolerance */
 
    while (x - y > e) {
       x = (x + y) / 2;
