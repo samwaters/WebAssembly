@@ -64,7 +64,7 @@ export const Addition = () => {
 		const wasmStart = new Date().getTime()
 		while(true) {
 			if(new Date().getTime() - wasmStart > 5000) break
-			window.wasm.nativeAddition(1000000, 2000000)
+			window.wasm.wasmAddition(1000000, 2000000)
 			wasmOperations++
 		}
 		setWASMOperations(wasmOperations)

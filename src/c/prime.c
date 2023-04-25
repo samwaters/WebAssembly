@@ -1,15 +1,25 @@
-#include <emscripten.h>
-#include <stdio.h>
-#include <math.h>
 #include "prime.h"
 
-int main() {
-  return 0;
+double squareRoot(double number) {
+   double x = number;
+   double y = 1.0;
+   double e = 0.000001; /* error tolerance */
+
+   while (x - y > e) {
+      x = (x + y) / 2;
+      y = number / x;
+   }
+   return x;
 }
 
-EMSCRIPTEN_KEEPALIVE
+double fmod(double x, double y) {
+    int quotient = (int)(x / y);
+    double remainder = x - quotient * y;
+    return remainder;
+}
+
 int isPrime(double num) {
-  double root = sqrt(num);
+  double root = squareRoot(num);
   for(double i=2; i<root; i++) {
     if(fmod(num, i) == 0) {
       return 0;
